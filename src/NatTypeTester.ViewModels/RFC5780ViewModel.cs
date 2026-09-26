@@ -32,8 +32,7 @@ public partial class RFC5780ViewModel : ViewModelBase
 	{
 		CancelTestCommand.DisposeWith(Disposables);
 		DiscoveryNatTypeCommand.DisposeWith(Disposables);
-		IObservable<bool> isExecuting = DiscoveryNatTypeCommand.IsExecuting;
-		_isTestingHelper = isExecuting.ToProperty(this, x => x.IsTesting);
+		_isTestingHelper = DiscoveryNatTypeCommand.IsExecuting.ToProperty(this, x => x.IsTesting);
 		_isTestingHelper.DisposeWith(Disposables);
 
 		this.WhenChanged(static viewModel => viewModel.TransportType)
