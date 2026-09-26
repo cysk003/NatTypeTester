@@ -17,8 +17,3 @@ global using STUN.Enums;
 global using STUN.StunResult;
 global using System.Collections.ObjectModel;
 global using System.Globalization;
-global using static ReactiveUI.CollectionChangedExtensions;
-global using ObservableAsProperty = ReactiveUI.Binding.ObservableAsPropertyAttribute;
-global using ReactiveObject = ReactiveUI.ReactiveObject;
-global using RxSchedulers = ReactiveUI.RxSchedulers;
-global using RxState = ReactiveUI.RxState;

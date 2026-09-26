@@ -1,3 +1,5 @@
+using ReactiveUI;
+
 namespace NatTypeTester.ViewModels;
 
 public sealed partial class ApplicationSettingsViewModel : ViewModelBase
